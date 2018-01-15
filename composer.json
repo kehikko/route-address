@@ -1,0 +1,16 @@
+{
+	"name": "kehikko/route-address",
+	"type": "kehikko-route",
+	"description": "Kehikko framework address UI functionality helpers",
+	"license": "MIT",
+	"authors": [
+	{
+		"name": "Antti Partanen",
+		"email": "aehparta@iki.fi"
+	}],
+	"require":
+	{
+		"php": ">=7.0.0",
+		"kehikko/composer": "*"
+	}
+}
