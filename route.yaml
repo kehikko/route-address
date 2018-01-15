@@ -1,0 +1,12 @@
+postcode-search-form:
+  controller: Address
+  action: postcodeSearchForm
+  method: get
+  format: html
+
+postcode-search:
+  pattern: /postcode/search/{country_code}/{postcode|int}
+  controller: Address
+  action: postcodeSearch
+  method: get
+  format: json
