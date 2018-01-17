@@ -1,5 +1,5 @@
 <div id=""{{ options.id }} class="dropdown postcode-search-form {{ options.classes }}">
-  <input id="{{ random_id }}" value="{{ options.value }}" name="{{ options.name }}" class="form-control ul-search-input postcode-search-input" placeholder="{{ options.placeholder }}" type="text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" search-target="postcode-list-{{ random_id }}" autocomplete="off"/>
+  <input id="{{ random_id }}" value="{{ options.value }}" name="{{ options.name }}" class="form-control ul-search-input postcode-search-input" placeholder="{{ options.placeholder }}" type="text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" search-target="postcode-list-{{ random_id }}" autocomplete="off" country_id="{{ options.country_id }}" city_id="{{ options.city_id }}" />
   <ul id="postcode-list-{{ random_id }}" search-max="{{ search_max }}" aria-labelledby="{{ random_id }}" class="dropdown-menu ul-searchable postcode-search-list">
     {% for postcode in postcodes %}
     <li searchable="yes" search-value="{{ postcode.getPostcode() }}" {% if loop.index>
